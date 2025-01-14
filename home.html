@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            height: 2000px;
+            background-color: #ccc;
+        }
+
+        .card {
+            width: 270px;
+        }
+
+        .price p,
+        .price del {
+            font-size: 15px;
+        }
+
+        .eighty_eight {
+            color: rgba(211, 216, 220, 0.751);
+        }
+
+        .fa-rotate-by:hover {
+            color: red;
+            font-size: larger;
+        }
+
+        .view_product {
+            width: 170px;
+            height: 40px;
+            transform: 2s;
+        }
+
+        .view_product:hover {
+            transform: scale(1.2);
+
+
+        }
+      
+        @media screen and (max-width:1100px) {
+            .card {
+                display: flex;
+                justify-content: center;
+                margin: 10px auto;
+                width: 100%;
+            }
+        }
+        .carousel-inner{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 630px;
+            border-radius: 10px;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .rating {
+                justify-content: space-between;
+            }
+
+            .card {
+                display: flex;
+                justify-content: center;
+                margin: 10px auto;
+                width: 100%;
+            }
+        }
+        .card{
+            box-shadow: 2px 1px 10px black;
+           
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        .frame {
+            width: 150px;
+            margin-left: 20px;
+            
+            height: 145px;
+        }
+
+        .frame:hover {
+            background-color: #d6d6d6;
+
+        }
+        .card-title{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: red;
+        }
+        .optional:hover {
+            transform: rotate(-20deg);
+        }
+        @media screen and (max-width:1100px) {
+            .frame{
+             margin: 5px;
+             width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 class="text-dark fs-2">Product</h4>
+
+            <!-- Product Card Template -->
+           
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-dark text-light">
+                    <a href="#detail">
+                        
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-light ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-dark text-light">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-light ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-dark text-light">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-light ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-dark text-light">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-light ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn bg-danger view_product mt-5 m-auto">
+                <p class="text-light m-auto">View the Product</p>
+            </button>
+            <hr class="mt-5">
+            <!-- Repeat Product Card -->
+            <!-- Duplicate or dynamically generate similar cards for other products -->
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center g-4">
+                <!-- Item 1 -->
+                <div class="col-6 col-md-4 col-lg-2 d-flex frame border">
+                    <img src="/img/iphone(1).png" alt="iPhone" class="m-auto optional img-fluid">
+                </div>
+                <!-- Item 2 -->
+                <div class="col-6 col-md-4 col-lg-2 d-flex frame border">
+                    <img src="/img/monitor.png" alt="Monitor" class="m-auto optional img-fluid">
+                </div>
+                <!-- Item 3 -->
+                <div class="col-6 col-md-4 col-lg-2 d-flex frame border">
+                    <img src="/img/smartwatch.png" alt="Smartwatch" class="m-auto optional img-fluid">
+                </div>
+                <!-- Item 4 -->
+                <div class="col-6 col-md-4 col-lg-2 d-flex frame border">
+                    <img src="/img/camera.png" alt="Camera" class="m-auto optional img-fluid">
+                </div>
+                <!-- Item 5 -->
+                <div class="col-6 col-md-4 col-lg-2 d-flex frame border">
+                    <img src="/img/headphone.png" alt="Headphone" class="m-auto optional img-fluid">
+                </div>
+                <!-- Item 6 -->
+                <div class="col-6 col-md-4 col-lg-2 d-flex frame border">
+                    <img src="/img/games.png" alt="Games" class="m-auto optional img-fluid">
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="row mt-5">
+            <h4 class="text-dark ">Best Sell</h4>
+
+            <!-- Product Card Template -->
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+
+                        <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fs-5 fs-5 fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div id="carouselExampleIndicators" class="carousel slide carousel_slide mt-5 w-100  rounded-1">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/f355ca_e0a62fd8478643ba899083e66fc7971f~mv2.gif" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/f355ca_e0a62fd8478643ba899083e66fc7971f~mv2.gif" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <!-- Product Card Template -->
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        <div class="row mt-4">
+            <!-- Product Card Template -->
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        <div class="row mt-4">
+            <!-- Product Card Template -->
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card bg-light text-dark">
+                    <a href="#detail">
+                        <img src="/img/8e4417611d19c62c37316f64c7f2dea3.jpg" class="card-img-top p-2 rounded-1" alt="Product Image">
+                    </a>
+                    
+                    <div class="card-body">
+                        <p class="Gamepad card-title">HAVIT HV-G92 Gamepad</p>
+                        <div class="d-flex price">
+                            <p class="text-danger">$120</p>
+                            <del class="text-dark ms-2">$160</del>
+                        </div>
+                        <div class="rating d-flex align-items-center">
+                            <!-- Stars -->
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star ms-1" style="color: #FFD43B;"></i>
+                            <!-- Review Count -->
+                            <p class="ms-3 eighty_eight mt-3">(88)</p>
+                            <!-- Cart Icon -->
+                            <i class="fa-solid fa-cart-shopping fa-rotate-by ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
